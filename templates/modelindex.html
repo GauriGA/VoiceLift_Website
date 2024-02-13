@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.quiz-container h1 {
+    text-align: center;
+}
+
+.quiz-container h2.question {
+    font-size: 24px;
+    background: #d0ecff;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: normal;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+.quiz-container .options {
+    margin-bottom: 20px;
+}
+
+.quiz-container .option {
+    display: block;
+    border: none;
+    padding: 12px 16px;
+    font-size: 18px;
+    background: #1d3557;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.quiz-container button {
+    cursor: pointer;
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.quiz-container button:hover {
+    background-color: #0b1c35;
+}
+
+
+</style>
+
+<body>
+    <form action="/predict" method="post">
+        <div class="quiz-container">
+            <h1>MENTAL HEALTH QUIZ</h1>
+            <h2 class="question">Age</h2>
+            <div class="options">
+                <input type="radio" name="age" value="16-20 years">16-20 years
+                <input type="radio" name="age" value="20-25 years">20-25 years
+                <input type="radio" name="age" value="25-30 years">25-30 years
+                <input type="radio" name="age" value="More than 30 years">More than 30 years
+            </div>
+        </div>
+        
+        <div class="quiz-container">
+            <h2 class="question">Sex</h2>
+            <div class="options">
+                <input type="radio" name="sex" value="Male">Male
+                <input type="radio" name="sex" value="Female">Female
+            </div>
+        </div>
+        
+        <div class="quiz-container">
+            <h2 class="question">Occupation</h2>
+            <div class="options">
+                <input type="radio" name="occupation" value="Corporate">Corporate
+                <input type="radio" name="occupation" value="Student">Student
+                <input type="radio" name="occupation" value="Housewife">Housewife
+                <input type="radio" name="occupation" value="Business">Business
+                <input type="radio" name="occupation" value="Others">Others
+            </div>
+        </div>
+        
+        <div class="quiz-container">
+            <h2 class="question">Since how many days are you staying indoors?</h2>
+            <div class="options">
+                <input type="radio" name="indoor_days" value="1-14 days">1-14 days
+                <input type="radio" name="indoor_days" value="15-30 days">15-30 days
+                <input type="radio" name="indoor_days" value="30-61 days">30-61 days
+                <input type="radio" name="indoor_days" value="More than 2 months">More than 2 months
+                <input type="radio" name="indoor_days" value="Go outside daily">Go outside daily
+            </div>
+        </div>
+        
+        <div class="quiz-container">
+            <h2 class="question">Have you experienced a growth in stress?</h2>
+            <div class="options">
+                <input type="radio" name="stress_growth" value="Yes">Yes
+                <input type="radio" name="stress_growth" value="No">No
+                <input type="radio" name="stress_growth" value="Maybe">Maybe
+            </div>
+        </div>
+        
+        <div class="quiz-container">
+            <h2 class="question">Are you frustrated with this quarantine?</h2>
+            <div class="options">
+                <input type="radio" name="frustration" value="Yes">Yes
+                <input type="radio" name="frustration" value="No">No
+                <input type="radio" name="frustration" value="Maybe">Maybe
+            </div>
+        </div>
+        
+        <div class="quiz-container">
+            <h2 class="question">Have you experienced changes in your daily habits?</h2>
+            <div class="options">
+                <input type="radio" name="habit_changes" value="Yes">Yes
+                <input type="radio" name="habit_changes" value="No">No
+                <input type="radio" name="habit_changes" value="Maybe">Maybe
+            </div>
+        </div>
+        
+        <div class="quiz-container">
+            <h2 class="question">Do you have a mental health history?</h2>
+            <div class="options">
+                <input type="radio" name="mental_health_history" value="Yes">Yes
+                <input type="radio" name="mental_health_history" value="No">No
+                <input type="radio" name="mental_health_history" value="Maybe">Maybe
+            </div>
+        </div>
+        
+        <div class="quiz-container">
+            <h2 class="question">Have you experienced changes in your weight?</h2>
+            <div class="options">
+                <input type="radio" name="weight_changes" value="Yes">Yes
+                <input type="radio" name="weight_changes" value="No">No
+                <input type="radio" name="weight_changes" value="Maybe">Maybe
+            </div>
+        </div>
+        
+        <div class="quiz-container">
+            <h2 class="question">What is the frequency of your mood swings?</h2>
+            <div class="options">
+                <input type="radio" name="mood_swings_frequency" value="High">High
+                <input type="radio" name="mood_swings_frequency" value="Medium">Medium
+                <input type="radio" name="mood_swings_frequency" value="Low">Low
+            </div>
+        </div>
+        
+        <div class="quiz-container">
+            <h2 class="question">Are you successful in coping struggles?</h2>
+            <div class="options">
+                <input type="radio" name="coping_struggles" value="Yes">Yes
+                <input type="radio" name="coping_struggles" value="No">No
+            </div>
+        </div>
+        
+        <div class="quiz-container">
+            <h2 class="question">Do you feel interested in working?</h2>
+            <div class="options">
+                <input type="radio" name="interest_in_working" value="Yes">Yes
+                <input type="radio" name="interest_in_working" value="No">No
+                <input type="radio" name="interest_in_working" value="Maybe">Maybe
+            </div>
+        </div>
+        
+        <div class="quiz-container">
+            <h2 class="question">Do you feel social weakness?</h2>
+            <div class="options">
+                <input type="radio" name="social_weakness" value="Yes">Yes
+                <input type="radio" name="social_weakness" value="No">No
+                <input type="radio" name="social_weakness" value="Maybe">Maybe
+            </div>
+        </div>
+        <div class="quiz-container">
+            <input type="submit" name="predict" value="predict">
+        </div>        
+        
+    </form>
+
+</body>
+</html>
