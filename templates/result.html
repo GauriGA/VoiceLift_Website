@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lavender;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 18px;
+            text-align: center;
+        }
+        .treatment-needed {
+            color: #ff0000;
+        }
+        .treatment-not-needed {
+            color: #00cc00;
+        }
+        .moderate-treatment {
+            color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% if result == '0' %}
+        <p class="treatment-needed">You need treatment.</p>
+        {% elif result == '1' %}
+        <p class="treatment-not-needed">You don't need treatment.</p>
+        {% elif result == '2' %}
+        <p class="moderate-treatment">You need moderate treatment.</p>
+        {% else %}
+        <p>Prediction: {{ result }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
