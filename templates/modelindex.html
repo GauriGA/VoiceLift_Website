@@ -54,6 +54,26 @@
         .quiz-container button:hover {
             background-color: #0b1c35;
         }
+
+        .predict-button {
+            display: block;
+            width: 20%;
+            text-align: center;
+            background-color: #1d3557;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .predict-button:hover {
+            background-color: #0b1c35;
+        }
+
     </style>
 </head>
 <body>
@@ -306,7 +326,7 @@
         </div>
         
         <div class="quiz-container">
-            <input type="submit" name="predict" value="predict">
+            <button type="submit" name="predict" class="predict-button">Predict</button>
         </div>
     </form>
 </body>
