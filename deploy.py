@@ -157,5 +157,5 @@ def predict():
     # Redirect to the result route with the prediction result as a parameter
     return redirect(url_for('result', result=prediction))
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
