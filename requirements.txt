@@ -4,7 +4,7 @@ numpy
 joblib
 pandas
 seaborn
-sklearn
+scikit-learn
 matplotlib
 scipy.stats
 tensorflow
