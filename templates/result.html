@@ -37,9 +37,9 @@
 <body>
     <div class="container">
         {% if result == '0' %}
-        <p class="treatment-needed">You need treatment.</p>
+        <p class="treatment-needed">You don't need treatment.</p>
         {% elif result == '1' %}
-        <p class="treatment-not-needed">You don't need treatment.</p>
+        <p class="treatment-not-needed">You need treatment.</p>
         {% elif result == '2' %}
         <p class="moderate-treatment">You need moderate treatment.</p>
         {% else %}
