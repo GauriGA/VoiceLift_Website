@@ -2,3 +2,10 @@ Flask
 gunicorn
 numpy
 joblib
+pandas
+seaborn
+sklearn
+matplotlib
+scipy.stats
+tensorflow
+argparse
