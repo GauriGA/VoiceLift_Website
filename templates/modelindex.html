@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mental Heatlth Quiz</title>
     <style>
         body {
             font-family: "Roboto", sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0;
         }
 
         .quiz-container {
             max-width: 900px;
             margin: 0 auto;
             padding: 16px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
 
         .quiz-container h1 {
             text-align: center;
+            color: #333;
         }
 
         .quiz-container h2.question {
             font-size: 24px;
-            background: #d0ecff;
+            background: linear-gradient(135deg, #ff6b6b, #56ccf2);
             padding: 16px;
             border-radius: 8px;
             font-weight: normal;
             line-height: 1.6;
             margin-top: 30px;
+            color: #fff;
         }
 
         .quiz-container .options {
@@ -42,24 +50,25 @@
 
         .quiz-container button {
             cursor: pointer;
-            background-color: #1d3557;
+            background-color: #ff6b6b;
             color: white;
             border: none;
             border-radius: 4px;
             padding: 12px 24px;
             font-size: 18px;
             margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
 
         .quiz-container button:hover {
-            background-color: #0b1c35;
+            background-color: #ff5252;
         }
 
         .predict-button {
             display: block;
             width: 20%;
             text-align: center;
-            background-color: #1d3557;
+            background-color: #56ccf2;
             color: white;
             border: none;
             border-radius: 4px;
@@ -71,11 +80,11 @@
         }
 
         .predict-button:hover {
-            background-color: #0b1c35;
+            background-color: #4bb7d8;
         }
-
     </style>
 </head>
+
 <body>
     <form action="/predict" method="post">
         <div class="quiz-container">
@@ -100,7 +109,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <h2 class="question">Sex</h2>
             <div class="options">
@@ -114,7 +123,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <h2 class="question">Occupation</h2>
             <div class="options">
@@ -140,7 +149,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <h2 class="question">Since how many days are you staying indoors?</h2>
             <div class="options">
@@ -166,7 +175,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <h2 class="question">Have you experienced a growth in stress?</h2>
             <div class="options">
@@ -184,7 +193,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <h2 class="question">Are you frustrated with this quarantine?</h2>
             <div class="options">
@@ -202,7 +211,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <h2 class="question">Have you experienced changes in your daily habits?</h2>
             <div class="options">
@@ -220,7 +229,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <h2 class="question">Do you have a mental health history?</h2>
             <div class="options">
@@ -238,7 +247,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <h2 class="question">Have you experienced changes in your weight?</h2>
             <div class="options">
@@ -256,7 +265,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <h2 class="question">What is the frequency of your mood swings?</h2>
             <div class="options">
@@ -274,7 +283,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <h2 class="question">Are you successful in coping struggles?</h2>
             <div class="options">
@@ -288,7 +297,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <h2 class="question">Do you feel interested in working?</h2>
             <div class="options">
@@ -306,7 +315,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <h2 class="question">Do you feel social weakness?</h2>
             <div class="options">
@@ -324,10 +333,11 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="quiz-container">
             <button type="submit" name="predict" class="predict-button">Predict</button>
         </div>
     </form>
 </body>
+
 </html>
