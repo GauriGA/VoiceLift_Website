@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Chat</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #e2e2ee;
+            /* Light gray background */
+        }
+
+        #messages {
+            flex: 1;
+            overflow: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        #messageForm {
+            display: flex;
+            margin: 20px;
+        }
+
+        #messageInput {
+            flex: 1;
+            margin-right: 10px;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 12px 24px;
+            background-color: #257a12;
+            border: none;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #228c0f;
+        }
+
+        .message-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .message {
+            max-width: 70%;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .message-sent {
+            align-self: flex-end;
+            background-color: #007bff;
+            /* Blue for messages sent by the current user */
+            color: #fff;
+        }
+
+        .message-received {
+            align-self: flex-start;
+            /* Positions the message on the left side */
+            background-color: #f38080;
+            /* Light gray for messages received from other users */
+            color: #333;
+        }
+
+        .message-timestamp {
+            font-size: 12px;
+            color: #0b0b0b;
+            margin-top: 5px;
+            /* Change margin to top */
+            position: absolute;
+            bottom: -20px;
+            right: 0;
+        }
+
+        .date-divider {
+            text-align: center;
+            margin: 10px 0;
+            color: #0b0b0b;
+            font-size: 14px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #007bff;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="messages"></div>
+    <form id="messageForm">
+        <input id="messageInput" autocomplete="off" placeholder="Type a message..." />
+        <button>Send</button>
+    </form>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script>
+        const socket = io();
+
+        // Variable to store the last displayed date
+        let lastDate = null;
+
+        // Listen for incoming messages
+        socket.on('chat message', (data) => {
+            const messages = document.getElementById('messages');
+            const messageContainer = document.createElement('div');
+            const messageElement = document.createElement('p');
+            const timestampElement = document.createElement('span');
+
+            const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); // Get message timestamp without seconds
+            const messageDate = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }); // Get message date in "February 2, 2025" format
+
+            messageContainer.classList.add('message-container');
+            messageElement.classList.add('message');
+            messageElement.classList.add(data.sender === 'me' ? 'message-sent' : 'message-received');
+            messageElement.textContent = data.message;
+
+            // Check if the message date is different from the last displayed date
+            if (messageDate !== lastDate) {
+                // Create a date divider element
+                const dateDivider = document.createElement('div');
+                dateDivider.classList.add('date-divider');
+                dateDivider.textContent = messageDate;
+
+                // Append the date divider to the messages container
+                messages.appendChild(dateDivider);
+
+                // Update the last displayed date
+                lastDate = messageDate;
+            }
+
+            timestampElement.classList.add('message-timestamp');
+            timestampElement.textContent = timestamp;
+
+            messageContainer.appendChild(messageElement);
+            messageContainer.appendChild(timestampElement);
+            messages.appendChild(messageContainer);
+            messages.scrollTop = messages.scrollHeight;
+        });
+
+        // Send a message
+        const form = document.getElementById('messageForm');
+        const input = document.getElementById('messageInput');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const message = input.value.trim();
+            if (message !== '') {
+                socket.emit('chat message', { sender: 'me', message }); // Send sender information
+                input.value = '';
+            }
+        });
+    </script>
+</body>
+
+</html>
