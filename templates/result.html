@@ -3,48 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mental Health Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: lavender;
+            background: linear-gradient(to right, #6dd5ed, #2193b0); /* Updated gradient background */
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden; /* Hide overflow to prevent scrollbar */
         }
         .container {
-            max-width: 600px;
-            margin: 100px auto;
+            max-width: 500px;
+            margin: auto;
             background-color: #fff;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: slideIn 0.5s ease forwards;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
         p {
             font-size: 18px;
             text-align: center;
+            margin: 20px 0;
+            color: #555;
+        }
+        .treatment-needed, .moderate-treatment, .treatment-not-needed {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
         .treatment-needed {
-            color: #ff0000;
+            color: #ff4d4d;
         }
         .treatment-not-needed {
-            color: #00cc00;
+            color: #2ecc71;
         }
         .moderate-treatment {
-            color: #ff9900;
+            color: #ffa500;
+        }
+        .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #111212; /* Change the color of the brain icon */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        #tag {
+            color: purple; /* Color for the tag */
         }
     </style>
 </head>
 <body>
+    
     <div class="container">
+        <i class="fas fa-brain icon"></i>
+        <h1 style="color: black;">Mental Health Prediction</h1><br>
         {% if result == '0' %}
-        <p class="treatment-needed">You don't need treatment.</p>
+        <p class="treatment-not-needed"><i>You don't need mental health treatment. </i><br><br> Unlock your potential and embrace a brighter tomorrow! Discover the power within you. Let's journey together towards holistic wellness.</p>
         {% elif result == '1' %}
-        <p class="treatment-not-needed">You need treatment.</p>
+        <p class="treatment-needed">
+            <i>You need mental health treatment. </i><br><br>
+            Your mental health matters. If you're struggling, seeking support is a sign of strength. Reach out to a mental health professional or someone you trust. Taking this step is a positive investment in your overall health and happiness. You're not alone on this journey.
+            <br>
+            <p id="tag">#SelfCare #MentalHealthSupport</p>
+        </p>
         {% elif result == '2' %}
-        <p class="moderate-treatment">You need moderate treatment.</p>
+        <p class="moderate-treatment"><i>You need moderate mental health treatment. </i><br><br>
+            Your well-being matters to us! While we're not a substitute for professional mental health treatment, we encourage you to prioritize self-care and seek support from friends, family, or a qualified mental health professional if needed. Remember, taking care of your mental health is a sign of strength. Reach out, you're not alone. 💚 <br>
+            <p id="tag">#SelfCare </p>
+        </p>
         {% else %}
         <p>Prediction: {{ result }}</p>
         {% endif %}
     </div>
+    
 </body>
 </html>
