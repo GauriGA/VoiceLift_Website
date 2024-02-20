@@ -9,21 +9,48 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #fff;
+   
 }
+
+.service-item:hover {
+    animation: pulse 1s ease-in-out infinite alternate;
+    .service-icon {
+      animation: rotate 3s linear infinite;
+    }
+  }
+
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 .service-icon {
     font-size: 48px;
     color: #feb900;
     margin-bottom: 20px;
     text-align: center;
+    
 }
+
 
 .service-item h3 {
     font-size: 24px;
@@ -45,10 +72,4 @@
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.read-more:hover {
-    background-color: #f29600;
-}
+    text-decoration: none   }
