@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>VoiceLift: Login</title>
+    <title>VoiceLift: Dashboard</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/logo.jpg" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,19 +28,21 @@
 <body>
     <header id="header" class="header d-flex align-items-center">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="index.php" class="logo d-flex align-items-center">
                 <h1>VoiceLift<span>.</span></h1>
             </a>
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.php" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="logout.html">Logout</a></li>
-                </ul>
+                    <li><a href="index.php#services">Our Services</a></li>
+                    <li><a href="index.php#testimonials">Testimonials</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="https://forms.gle/prB3HAi71ZRzXNXL9" target="_blank">Help and Feedback</a></li>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
             </nav>
         </div>
     </header>
@@ -65,7 +67,7 @@
                 </div>
                 <h3>Education</h3>
                 <p>Access educational resources and programs to enhance your knowledge and skills.</p>
-                <a href="#" class="read-more">Read More</a>
+                <a href="assets\documents\Educational Resources.docx" class="read-more">Read More</a>
                 <!-- Add specific details or links related to education services -->
             </div>
 
@@ -76,6 +78,7 @@
                 </div>
                 <h3>Vocational Support</h3>
                 <p>Get assistance with job training, resume building, and career development.</p>
+                <a href="assets\documents\Vocational Support.docx" class="read-more">Read More</a>
                 <!-- Add specific details or links related to vocational support services -->
             </div>
 
@@ -86,16 +89,8 @@
                 </div>
                 <h3>Mental Health</h3>
                 <p>Access counseling, therapy, and mental health support services.</p>
+                <a href="https://voicelift-flask.onrender.com/" class="read-more">Check Your Mental Helath Status</a>
                 <!-- Add specific details or links related to mental health services -->
-            </div>
-
-            <!-- Court Hearing Tracker Service -->
-            <div id="court_hearing_tracker" class="service-item">
-                <div class="service-icon">
-                    <i class="bi bi-calendar-check"></i>
-                </div>
-                <h3>Court Hearing Tracker</h3>
-                <p>Track upcoming court hearings and receive reminders.</p>
             </div>
 
             <!-- Rights Directory Service -->
@@ -105,6 +100,7 @@
                 </div>
                 <h3>Rights Directory</h3>
                 <p>Explore a directory of legal rights and regulations.</p>
+                <a href="assets\documents\Rights Directory.docx" class="read-more">Read More</a>
             </div>
 
             <!-- Lawyer Support Service -->
@@ -114,15 +110,7 @@
                 </div>
                 <h3>Lawyer Support</h3>
                 <p>Get assistance from legal experts and lawyers through chatting.</p>
-            </div>
-
-            <!-- Chatbot Service -->
-            <div id="chatbot" class="service-item">
-                <div class="service-icon">
-                    <i class="bi bi-chat-dots"></i>
-                </div>
-                <h3>Chatbot</h3>
-                <p>Interact with a chatbot for instant help and information.</p>
+                <a href="#" class="read-more">Click Here</a>
             </div>
 
             <!-- Complaint Desk Service -->
@@ -132,6 +120,7 @@
                 </div>
                 <h3>Complaint Desk</h3>
                 <p>Submit complaints and feedback for prompt resolution.</p>
+                <a href="https://forms.gle/PdzUVZQvcHV9KTWa9" class="read-more" target="_blank">Click Here</a>
             </div>
 
             <!-- Add more service sections as needed -->
@@ -168,14 +157,15 @@
                     <div class="col-lg-2 col-md-3 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Terms of service</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                        </ul>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="index.php#services">Our Services</a></li>
+                            <li><a href="index.php#testimonials">Testimonials</a></li>
+                            <li><a href="https://forms.gle/prB3HAi71ZRzXNXL9" target="_blank">Help and Feedback</a></li>
+                          </ul>
+                        
                     </div>
-                    <div class="col-lg-2 col-md-3 footer-links">
+                    <!-- <div class="col-lg-2 col-md-3 footer-links">
                         <h4>Our Services</h4>
                         <ul>
                             <li><a href="#">Web Design</a></li>
@@ -184,7 +174,7 @@
                             <li><a href="#">Marketing</a></li>
                             <li><a href="#">Graphic Design</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
