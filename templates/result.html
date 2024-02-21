@@ -81,8 +81,10 @@
     <div class="container">
         <i class="fas fa-brain icon"></i>
         <h1 style="color: black;">Mental Health Prediction</h1><br>
+
         {% if result == '0' %}
         <p class="treatment-not-needed"><i>You don't need mental health treatment. </i><br><br> Unlock your potential and embrace a brighter tomorrow! Discover the power within you. Let's journey together towards holistic wellness.</p>
+
         {% elif result == '1' %}
         <p class="treatment-needed">
             <i>You need mental health treatment. </i><br><br>
@@ -90,11 +92,13 @@
             <br>
             <p id="tag">#SelfCare #MentalHealthSupport</p>
         </p>
+
         {% elif result == '2' %}
         <p class="moderate-treatment"><i>You need moderate mental health treatment. </i><br><br>
             Your well-being matters to us! While we're not a substitute for professional mental health treatment, we encourage you to prioritize self-care and seek support from friends, family, or a qualified mental health professional if needed. Remember, taking care of your mental health is a sign of strength. Reach out, you're not alone. 💚 <br>
             <p id="tag">#SelfCare </p>
         </p>
+        
         {% else %}
         <p>Prediction: {{ result }}</p>
         {% endif %}
