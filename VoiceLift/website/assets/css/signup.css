@@ -1,0 +1,107 @@
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f6f7;
+        }
+
+        /* Sign-up page specific styles */
+        .signup-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .signup-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .signup-heading h2 {
+            color: black;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .SignUpForm input[type="text"],
+        .SignUpForm input[type="password"],
+        .SignUpForm select {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        .SignUpForm input[type="text"]:focus,
+        .SignUpForm input[type="password"]:focus,
+        .SignUpForm select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .SignUpForm button[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #feb900;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .SignUpForm button[type="submit"]:hover {
+            background-color: #feb900;
+        }
+
+        .SignUpForm .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .SignUpForm .form-footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .SignUpForm .form-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .input-icon {
+            position: relative;
+        }
+
+        .input-icon i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+            color: #666;
+            font-size: 18px;
+        }
+
+        .SignUpForm select#userType {
+            padding-left: 40px;
+        }
+
+        .SignUpForm select#userType::placeholder {
+            color: #999;
+            font-weight: 500;
+        }
+
+        .SignUpForm input[type="text"],
+        .SignUpForm input[type="password"] {
+            padding-left: 40px;
+        }
+
+        .SignUpForm input[type="text"]::placeholder,
+        .SignUpForm input[type="password"]::placeholder {
+            color: #999;
+            font-weight: 500;
+        }
