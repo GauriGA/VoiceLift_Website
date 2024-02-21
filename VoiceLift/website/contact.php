@@ -1,3 +1,19 @@
+<?php
+session_start();
+
+$error_message = '';
+
+if ( $_POST ) {
+    include( 'connection.php' );
+
+}
+
+if (isset($_SESSION['success_message'])) {
+  echo '<div class="alert alert-success">'.$_SESSION['success_message'].'</div>';
+  unset($_SESSION['success_message']); // Clear the session variable after displaying the message
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,65 +47,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: UpConstruction
-  * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-<!--   <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
-    import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
 
-    const firebaseConfig = {
-    apiKey: "AIzaSyB7E8ELWhKAnND-DO_WD_9P4ymlIDSCHiE",
-    authDomain: "contactform-ef29a.firebaseapp.com",
-    databaseURL: "https://contactform-ef29a-default-rtdb.firebaseio.com",
-    projectId: "contactform-ef29a",
-    storageBucket: "contactform-ef29a.appspot.com",
-    messagingSenderId: "13992610304",
-    appId: "1:13992610304:web:db7cec175237141b9326e5"
-  };
-
-    const app = initializeApp(firebaseConfig);
-    const database = getDatabase(app);
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const ContactForm = document.getElementById("ContactForm");
-      ContactForm.addEventListener("submit", submitForm);
-
-      function submitForm(e) {
-        e.preventDefault();
-
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var subject = document.getElementById('subject').value;
-        var message = document.getElementById('message').value;
-
-        console.log(name, email, subject, message);
-
-        // Push the form data to your Firebase database
-        const formData = {
-          name: name,
-          email: email,
-          subject: subject,
-          message: message,
-        };
-        const formRef = ref(database, 'ContactForm');
-        push(formRef, formData)
-          .then(() => {
-            console.log("Data saved successfully");
-            // You can redirect or show a success message here
-          })
-          .catch((error) => {
-            console.error("Error saving data: ", error);
-          });
-      }
-    });
-  </script>
- -->
 </head>
 
 <body>
@@ -108,13 +68,13 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.php" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="index.html#services">Our Services</a></li>
-          <li><a href="index.html#testimonials">Testimonials</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.php#services">Our Services</a></li>
+          <li><a href="index.php#testimonials">Testimonials</a></li>
+          <li><a href="contact.php">Contact</a></li>
           <li><a href="#">Help and Feedback</a></li>
-          <li><a href="login.html">Login</a></li>
+          <li><a href="login.php">Login</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -129,7 +89,7 @@
 
         <h2>Contact</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li>Contact</li>
         </ol>
 
@@ -168,7 +128,7 @@
 
         <div class="row gy-4 mt-1">
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="ContactForm">
+            <form action="cont.php" method="POST" role="form" class="php-email-form" id="ContactForm">
               <div class="row gy-4">
                 <div class="col-lg-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -223,11 +183,11 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.php">Home</a></li>
               <li><a href="about.html">About us</a></li>
-              <li><a href="index.html#services">Our Services</a></li>
-              <li><a href="index.html#testimonials">Testimonials</a></li>
-              <li><a href="#">Help and Feedback</a></li>
+              <li><a href="index.php#services">Our Services</a></li>
+              <li><a href="index.php#testimonials">Testimonials</a></li>
+              <li><a href="https://forms.gle/XmWTHjSPS3HtNnHJA" target="_blank">Help and Feedback</a></li>
             </ul>
           </div>
 
@@ -270,7 +230,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
