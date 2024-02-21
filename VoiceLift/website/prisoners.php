@@ -1,3 +1,20 @@
+<?php
+
+session_start();
+
+// if ( !isset( $_SESSION[ 'user' ] ) ) header( 'location: index.php' );
+
+// $user = $_SESSION[ 'user' ];
+include( 'connection.php' );
+
+// $username = $_SESSION['user']['username'];
+// $fullnameQuery = 'SELECT * FROM voicelift.signup WHERE username = ?';
+// $fullnameStmt = $conn->prepare($fullnameQuery);
+// $fullnameStmt->execute([$username]);
+// $fullnameInfo = $fullnameStmt->fetch(PDO::FETCH_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +58,7 @@
                     <li><a href="index.php#testimonials">Testimonials</a></li>
                     <li><a href="contact.php">Contact</a></li>
                     <li><a href="https://forms.gle/prB3HAi71ZRzXNXL9" target="_blank">Help and Feedback</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="logout.php">Logout</a></li>
                   </ul>
             </nav>
         </div>
@@ -49,7 +66,7 @@
     <main id="main">
         <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/footer-bg.jpg');">
             <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
-                <h2>Login</h2>
+
                 <ol>
                     <li><a href="index.php">Home</a></li>
                     <li>Dashboard</li>
@@ -67,8 +84,18 @@
                 </div>
                 <h3>Education</h3>
                 <p>Access educational resources and programs to enhance your knowledge and skills.</p>
-                <a href="assets\documents\Educational Resources.docx" class="read-more">Read More</a>
+                <a href="https://docs.google.com/document/d/1qgc9Q4497RsoRo2KlH7SzG-BPfJXDX9r/edit?usp=sharing&ouid=106331804207026413883&rtpof=true&sd=true" target="_blank" class="read-more">Read More</a>
                 <!-- Add specific details or links related to education services -->
+            </div>
+
+            <!-- Lawyer Support Service -->
+            <div id="lawyer_support" class="service-item">
+                <div class="service-icon">
+                    <i class="bi bi-person-badge"></i>
+                </div>
+                <h3>Lawyer Support</h3>
+                <p>Get assistance from legal experts and lawyers through chatting.</p>
+                <a href="/lawyermanagementsystem/lawyermanagementsystem/index.php" class="read-more">Click Here</a>
             </div>
 
             <!-- Vocational Support Service -->
@@ -78,7 +105,7 @@
                 </div>
                 <h3>Vocational Support</h3>
                 <p>Get assistance with job training, resume building, and career development.</p>
-                <a href="assets\documents\Vocational Support.docx" class="read-more">Read More</a>
+                <a href="https://docs.google.com/document/d/19h827qHrbT46O0FWIIEEh0YJO6jLuOHo/edit?usp=sharing&ouid=106331804207026413883&rtpof=true&sd=true" target="_blank" class="read-more">Read More</a>
                 <!-- Add specific details or links related to vocational support services -->
             </div>
 
@@ -100,17 +127,7 @@
                 </div>
                 <h3>Rights Directory</h3>
                 <p>Explore a directory of legal rights and regulations.</p>
-                <a href="assets\documents\Rights Directory.docx" class="read-more">Read More</a>
-            </div>
-
-            <!-- Lawyer Support Service -->
-            <div id="lawyer_support" class="service-item">
-                <div class="service-icon">
-                    <i class="bi bi-person-badge"></i>
-                </div>
-                <h3>Lawyer Support</h3>
-                <p>Get assistance from legal experts and lawyers through chatting.</p>
-                <a href="#" class="read-more">Click Here</a>
+                <a href="https://docs.google.com/document/d/1QmvqUajIjtPOGNXdtSE93WmfZ0p8j4Xo/edit?usp=sharing&ouid=106331804207026413883&rtpof=true&sd=true" target="_blank" class="read-more">Read More</a>
             </div>
 
             <!-- Complaint Desk Service -->
