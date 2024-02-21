@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+$error_message = '';
+
+if ( $_POST ) {
+    include( 'connection.php' );
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +39,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <style> <?php include 'assets/css/main.css' ?> </style>
 
   <!-- =======================================================
   * Template Name: UpConstruction
@@ -37,57 +48,6 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-
-<!--   <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
-    import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
-
-    const firebaseConfig = {
-    apiKey: "AIzaSyB7E8ELWhKAnND-DO_WD_9P4ymlIDSCHiE",
-    authDomain: "contactform-ef29a.firebaseapp.com",
-    databaseURL: "https://contactform-ef29a-default-rtdb.firebaseio.com",
-    projectId: "contactform-ef29a",
-    storageBucket: "contactform-ef29a.appspot.com",
-    messagingSenderId: "13992610304",
-    appId: "1:13992610304:web:db7cec175237141b9326e5"
-  };
-
-    const app = initializeApp(firebaseConfig);
-    const database = getDatabase(app);
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const ContactForm = document.getElementById("ContactForm");
-      ContactForm.addEventListener("submit", submitForm);
-
-      function submitForm(e) {
-        e.preventDefault();
-
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var subject = document.getElementById('subject').value;
-        var message = document.getElementById('message').value;
-
-        console.log(name, email, subject, message);
-
-        // Push the form data to your Firebase database
-        const formData = {
-          name: name,
-          email: email,
-          subject: subject,
-          message: message,
-        };
-        const formRef = ref(database, 'ContactForm');
-        push(formRef, formData)
-          .then(() => {
-            console.log("Data saved successfully");
-            // You can redirect or show a success message here
-          })
-          .catch((error) => {
-            console.error("Error saving data: ", error);
-          });
-      }
-    });
-  </script> -->
   
 </head>
 
@@ -97,7 +57,7 @@
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logo.jpg" alt="" class="logo">
         <!-- <h1>LOGO<span>.</span></h1> -->
@@ -107,13 +67,13 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.php" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#services">Our Services</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
           <li><a href="https://forms.gle/XmWTHjSPS3HtNnHJA" target="=_blank">Help and Feedback</a></li>
-          <li><a href="login.html">Login</a></li>
+          <li><a href="login.php">Login</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -283,17 +243,18 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
+                  <h3>Hemlata Sharma</h3>
+                  <h4>Mechanical Engineer</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                       class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    "As a test user of this incredible prisoner support app, I can honestly say it's been a 
+                    fun ride for me. The seamless interface and easy navigation made it a breeze to access 
+                    resources and explore educational materials. It's not just an app;it's a lifeline that brings
+                     hope and support to those behind bars."
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -303,17 +264,18 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
+                  <h3>Sristi Basu</h3>
+                  <h4>Professor</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                       class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                    quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    "Being a test user for this prisoner support app has been a unique and uplifting experience.
+                     The wealth of legal information, mental health resources, and communication tools provided 
+                     me with a sense of empowerment and connection. It's more than just technology; it's a community
+                     that understands the challenges of incarceration and offers real solutions."
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -323,17 +285,18 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
+                  <h3>Jyoti Chaurasiya</h3>
+                  <h4>Student</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                       class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                    quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    "I had the privilege of testing this prisoner support app, and I can't speak highly enough of its 
+                    impact. The educational content, job readiness resources, and personalized guidance have been 
+                    instrumental in my rehabilitation journey. This app goes beyond expectations, making a positive 
+                    difference in the lives of those it serves."
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -345,8 +308,14 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section><!-- End testimonial item -->
 
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+
+    </div>
+    </section>
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -469,7 +438,7 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.php">Home</a></li>
               <li><a href="about.html">About us</a></li>
               <li><a href="#services">Our Services</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
@@ -520,6 +489,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
 
 </body>
 
