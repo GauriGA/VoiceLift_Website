@@ -1,3 +1,33 @@
+<?php
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Check if userType is set in the POST data
+    if (isset($_POST['userType'])) {
+        $userType = $_POST['userType'];
+
+        // Check the value of userType and redirect accordingly
+        switch ($userType) {
+            case 'admin':
+                header('Location: admin.php'); // Change this to the appropriate admin page
+                break;
+            case 'prisoner':
+                header('Location: prisoners.php');
+                break;
+            case 'lawyer':
+                header('Location: lawyers.html'); // Change this to the appropriate lawyer page
+                break;
+            default:
+                // Redirect to a default page if userType is not recognized
+                header('Location: default.html');
+                break;
+        }
+        exit; // Terminate the script after redirection
+}
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -132,19 +162,20 @@
 <body>
     <header id="header" class="header d-flex align-items-center">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="index.php" class="logo d-flex align-items-center">
                 <h1>VoiceLift<span>.</span></h1>
             </a>
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.php" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="feedback.html">Help and Feedback</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="index.php#services">Our Services</a></li>
+                    <li><a href="index.php#testimonials">Testimonials</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="https://forms.gle/prB3HAi71ZRzXNXL9" target="_blank">Help and Feedback</a></li>
+                    <li><a href="#">Logout</a></li>
                   </ul>
             </nav>
         </div>
@@ -154,7 +185,7 @@
             <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
                 <h2>Login</h2>
                 <ol>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li>Login</li>
                 </ol>
             </div>
@@ -166,7 +197,7 @@
                         <div class="login-heading">
                             <h2>Login</h2>
                         </div>
-                        <form class="login-form" action="login.php" method="post">
+                        <form class="login-form" action="login.php" method="POST">
                             <div class="mb-3 input-icon">
                                 <label for="userType" class="form-label visually-hidden">Are you a/an:</label>
                                 <select class="form-select" id="userType" name="userType" required>
@@ -190,7 +221,7 @@
                                 <button type="submit" class="btn btn-primary">Login</button>
                             </div>
                             <div class="form-footer">
-                                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                                <p>Don't have an account? <a href="signup.php">Sign up</a></p>
                             </div>
                         </form>
                     </div>
@@ -222,13 +253,13 @@
                     <div class="col-lg-2 col-md-3 footer-links">
                         <h4>Useful Links</h4>
                         
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="index.html#services">Our Services</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-              <li><a href="feedback.html">Help and Feedback</a></li>
-            </ul>
+                        <ul>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="index.php#services">Our Services</a></li>
+                            <li><a href="index.php#testimonials">Testimonials</a></li>
+                            <li><a href="https://forms.gle/prB3HAi71ZRzXNXL9" target="_blank">Help and Feedback</a></li>
+                          </ul>
           </div>
                         
                     </div>
