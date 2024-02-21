@@ -50,13 +50,12 @@ if ( $_POST ) {
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="index.php" class="active">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="index.php#services">Our Services</a></li>
-                    <li><a href="index.php#testimonials">Testimonials</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                    <li><a href="https://forms.gle/prB3HAi71ZRzXNXL9" target="_blank">Help and Feedback</a></li>
-                    <li><a href="login.php">Login</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Help and Feedback</a></li>
+                    <li><a href="login.html">Login</a></li>
                   </ul>
             </nav>
         </div>
@@ -67,7 +66,7 @@ if ( $_POST ) {
             <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
                 <h2>Sign Up</h2>
                 <ol>
-                    <li><a href="index.php">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li>Sign Up</li>
                 </ol>
             </div>
@@ -151,12 +150,13 @@ if ( $_POST ) {
                     <div class="col-lg-2 col-md-3 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><a href="index.php">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About us</a></li>
-                            <li><a href="index.php#services">Our Services</a></li>
-                            <li><a href="index.php#testimonials">Testimonials</a></li>
-                            <li><a href="https://forms.gle/prB3HAi71ZRzXNXL9" target="_blank">Help and Feedback</a></li>
+                            <li><a href="index.html#sevices">Our Services</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="feedback.html">Help and Feedback</a></li>
                           </ul>
+                    </div>
                     <!-- <div class="col-lg-2 col-md-3 footer-links">
                         <h4>Our Services</h4>
                         <ul>
