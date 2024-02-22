@@ -244,7 +244,7 @@ if ( $_POST ) {
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <h3>Hemlata Sharma</h3>
-                  <h4>Mechanical Engineer</h4>
+                  <h4>Student</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                       class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -265,7 +265,7 @@ if ( $_POST ) {
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <h3>Sristi Basu</h3>
-                  <h4>Professor</h4>
+                  <h4>Student</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                       class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
