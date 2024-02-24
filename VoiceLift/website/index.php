@@ -71,7 +71,7 @@ if ( $_POST ) {
           <li><a href="about.html">About</a></li>
           <li><a href="#services">Our Services</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="https://forms.gle/XmWTHjSPS3HtNnHJA" target="=_blank">Help and Feedback</a></li>
           <li><a href="login.php">Login</a></li>
         </ul>
@@ -348,29 +348,29 @@ if ( $_POST ) {
 
         <div class="row gy-4 mt-1">
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="ContactForm">
-              <div class="row gy-4">
-                <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+
+            <div class="contact-form">
+              <form action="" id="contactForm">
+                <div class="alert">Your message is sent</div>
+
+                <div class="inputBox">
+                  <input type="text" id="name" placeholder="Your name...." />
                 </div>
-                <div class="col-lg-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+
+                <div class="inputBox">
+                  <input type="email" id="emailid" placeholder="Your Email....." />
                 </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Your remark" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <!-- <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div> -->
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+
+                <div class="inputBox">
+                  <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+
+                <div class="inputBox">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
           </div>
+        </div>
           <div class="col-lg-6">
             <div class="right-footer">
               <ul class="Words">
