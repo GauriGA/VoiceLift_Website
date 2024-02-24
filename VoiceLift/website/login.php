@@ -173,7 +173,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <li><a href="about.html">About</a></li>
                     <li><a href="index.php#services">Our Services</a></li>
                     <li><a href="index.php#testimonials">Testimonials</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="https://forms.gle/prB3HAi71ZRzXNXL9" target="_blank">Help and Feedback</a></li>
                     <li><a href="#">Logout</a></li>
                   </ul>
