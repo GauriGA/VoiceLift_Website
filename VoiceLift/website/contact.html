@@ -33,6 +33,122 @@
 
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+  <style>
+    /* Adjustments for Contact Section */
+    .contact {
+      padding: 60px 0;
+    }
+
+    .contact .container {
+      position: relative;
+    }
+
+    .contact .contact-form {
+      background-color: #fff;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 40px;
+    }
+
+    .contact .section-header h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact .section-header p {
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #666;
+    }
+
+    .contact .info-item {
+      text-align: center;
+    }
+
+    .contact .info-item i {
+      font-size: 36px;
+      color: #333;
+    }
+
+    .contact .info-item h3 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contact .info-item p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .contact .inputBox {
+      display: flex;
+      justify-content: center;
+      /* Center horizontally */
+      align-items: center;
+      /* Center vertically */
+      margin-bottom: 20px;
+    }
+
+    .contact .inputBox input,
+    .contact .inputBox textarea {
+      width: 100%;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .contact .inputBox textarea {
+      resize: none;
+      height: 150px;
+    }
+
+    .contact .inputBox input::placeholder,
+    .contact .inputBox textarea::placeholder {
+      color: #999;
+    }
+
+    .contact .inputBox button {
+      width: 30%;
+      padding: 10px 20px;
+      /* Adjusted padding for button */
+      background-color: rgba(253, 189, 12, 0.918);
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact .inputBox button:hover {
+      background-color: #ffd565;
+    }
+
+    .contact .alert {
+      display: none;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #d4edda;
+      border-color: #c3e6cb;
+      color: #155724;
+      border-radius: 5px;
+    }
+
+    .contact.success .alert {
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
