@@ -2,7 +2,7 @@
 
 <h1 align="center" id="title">VoiceLift-Help for Innocent</h1>
 
-<p id="description">The project aims to address challenges faced by under-trial prisoners in India by leveraging technology for enhanced access to improve access to justice rehabilitation and legal assistance. VoiceLift is a website connecting prisoners with legal resources and facilitating representation. Additionally a platform links them with pro-bono lawyers streamlining the bail process while the rehabilitation program offers educational vocational and mental health support. Expected outcomes include improved legal aid access rehabilitation outcomes system transparency and collaboration in legal proceedings.</p>
+<p id="description">The project aims to address challenges faced by under-trial prisoners in India by leveraging technology for enhanced access to improve access to justice rehabilitation and legal assistance. VoiceLift is a website connecting prisoners with legal resources and facilitating representation. Additionally a platform links them with pro-bono lawyers streamlining the bail process while the rehabilitation program offers educational, vocational and mental health support. Expected outcomes include improved legal aid access, rehabilitation outcomes, system transparency and collaboration in legal proceedings.</p>
 
 <h2>🚀 Demo</h2>
 
@@ -17,10 +17,17 @@ Here're some of the project's best features:
 *   User log in system: There are three types of user login system. 1. Admin 2. Lawyer 3. General user. Each type of users has to put their username and password to log in into the system.
 *   Register users with validation: There are three types of user registration one is for lawyers one for admin and the other is for general users.
 
-      <h3>1. Prisoners Dashboard</h3>  
+      <h4>1. Prisoners Dashboard</h4>  
 *   Education Service: Access educational resources and programs to enhance knowledge and skills.
+*   Lawyer Management System: This system functions as a freelancing platform for lawyers, facilitating users in searching and hiring suitable legal representatives for individual cases. Its primary objective is to ensure users find compatible lawyers efficiently. The system employs filtering options, including seniority/experience, expertise, and location, allowing users to refine their search criteria. Users can explore lawyer profiles for detailed information and send booking requests for appointments, specifying preferred dates. Once a lawyer accepts a request, both parties are notified, and the lawyer can view the user's details. The system comprises three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests.
+          a. Filtering search option: Users can find lawyers through searching option.
+          b. Booking system general user end: User can check out lawyer’s profile and send them booking request. Automatically an email will be generated and will be send to lawyer’s email. They will be able to                                                see later whether their booking request is accepted or not.
+          c. Users don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the user into their private email.
+          d. The system enables web-based booking system.
+          e. User will be able to update their profile once they are logged in into the system.
+          f. Any guest user will be able to see the lawyers and check their profile. But for booking the lawyer they must have to register
 *   Vocational Support: Receive assistance with job training resume building and career development.
-*   Mental Health: Access counseling therapy and mental health support services.
+*   Mental Health: Assess their mental health well being by filling out a small a questionnaire predicted using ML model.
 *   Rights Directory: Explore a directory of legal rights and regulations.
 *   Complaint Desk: Submit complaints and feedback for prompt resolution.
 
