@@ -1,24 +1,26 @@
 **Sustainable Development Goal- Peace, Justice & Strong Institutions**
 
-**VoiceLift-Help for Innocent**
+<h1 align="center" id="title">VoiceLift-Help for Innocent</h1>
 
-#Description:
-The Online Lawyer Management System Project is an innovative platform designed to connect lawyers, clients, and undertrial prisoners efficiently. With a focus on user-friendly features and robust functionality, this system serves as a comprehensive solution for legal assistance. It includes three dashboards: Admin, Undertrial Prisoner, and Lawyer, each tailored to their specific needs.
+<p id="description">The project aims to address challenges faced by under-trial prisoners in India by leveraging technology for enhanced access to improve access to justice rehabilitation and legal assistance. VoiceLift is a website connecting prisoners with legal resources and facilitating representation. Additionally a platform links them with pro-bono lawyers streamlining the bail process while the rehabilitation program offers educational vocational and mental health support. Expected outcomes include improved legal aid access rehabilitation outcomes system transparency and collaboration in legal proceedings.</p>
 
-#Features:
-1. Undertrial Prisoner Dashboard:
+<h2>🚀 Demo</h2>
 
-.Provides access to individual rights information, including educational and vocational rights.
+[https://youtu.be/wSlBRi0ZHnY](https://youtu.be/wSlBRi0ZHnY)
 
-.Features a rights directory for quick reference.
+  
+  
+<h2>🧐 Features</h2>
 
-.Utilizes a machine learning model to predict mental health status.
+Here're some of the project's best features:
 
-.Includes a complaint desk for addressing grievances.
-
-.Allows appointment of lawyers for legal assistance.
-
-.Incorporates a user feedback mechanism for continuous improvement.
+*   User log in system: There are three types of user login system. 1. Admin 2. Lawyer 3. General user. Each type of users has to put their username and password to log in into the system.
+*   Register users with validation: There are three types of user registration one is for lawyers one for admin and the other is for general users.
+*   Education Service: Access educational resources and programs to enhance knowledge and skills.
+*   Vocational Support: Receive assistance with job training resume building and career development.
+*   Mental Health: Access counseling therapy and mental health support services.
+*   Rights Directory: Explore a directory of legal rights and regulations.
+*   Complaint Desk: Submit complaints and feedback for prompt resolution.
 
 2.Admin Dashboard:
 
