@@ -51,23 +51,35 @@ Here are some of the project's best features:
 3. Bootstrap
 4. JavaScript
 
-
 ### Backend Technologies Used
 1. PHP
 2. MySQL
 3. Firebase
 
 ### Machine Learning
-- Python
+1. Logistic Regression
+2. Decision Trees
+3. Random Forest
+4. Extra Trees
+5. Neural Networks
+6. Bagging
+7. Boosting
+8. Stacking
+9. GridSearchCV
+10. RandomizedSearchCV
+11. Flask
 
 ### Google Technologies Used
 1. Web / Progressive Web Apps
 2. Machine Learning
 3. Firebase
-4. Google Workspace
+4. Google Workspace (Google Drive, Forms, Docs)
 
-# Software Requirement
-- XAMPP Server
+### Software Requirement
+1. XAMPP Server
+
+### Platform for Deployment of Mental Health ML Model
+- Render
 
 # How to run the VoiceLift-Help for Innocent Project Using PHP Mysql and Firebase:
 
