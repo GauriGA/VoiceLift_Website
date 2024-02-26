@@ -19,7 +19,7 @@ Here're some of the project's best features:
 
       <h4>1. Prisoners Dashboard</h4>  
 *   Education Service: Access educational resources and programs to enhance knowledge and skills.
-*   Lawyer Management System: This system serves as a freelancing platform for lawyers, enabling users to find and hire suitable legal representatives for individual cases efficiently. It features three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The system employs following features: <br> <br>
+*   Lawyer Management System: This system serves as a freelancing platform for lawyers, enabling users to find and hire suitable legal representatives for individual cases efficiently. It features three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The User System employs following features: <br> <br>
           a. <i> Filtering search option</i>: Users can search for lawyers based on specific criteria. <br>
           b. <i>Booking system (general user)</i>: User can check out lawyer’s profile and send them booking request. Automatically an email will be generated and will be send to lawyer’s email. They will be able to see later whether their booking request is accepted or not. <br>
           c. <i>Secure Registration</i>: Users don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the user into their private email.
@@ -31,59 +31,25 @@ Here're some of the project's best features:
 *   Rights Directory: Explore a comprehensive directory of legal rights and regulations.
 *   Complaint Desk: Submit complaints and feedback for prompt resolution.
 
-<h3>2. Lawyers Dashboard</h3>
 
-.Manages user accounts and system functionality.
+      <h4>2. Lawyers Dashboard</h4> 
+* Lawyer Management System: This system serves as a freelancing platform for lawyers, enabling users to find and hire suitable legal representatives for individual cases efficiently. It features three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The Lawyers System employs following features: <br> <br>
+          a. <i>Booking system (lawyer)</i>: Lawyers can review their most recent booking requests upon logging into the system. They have the option to accept booking requests if they agree to meet with the client. Additionally, lawyers will receive email notifications to keep them informed of new booking requests. <br>
+          b. <i>Secure Registration</i>: Lawyers don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the lawyer into their private email.
+          c. <i>Profile Management</i>: Lawyers can update their profiles seamlessly once logged in into the system. <br>
 
-.Oversees complaints and lawyer appointments.
 
-.Generates reports and statistics for system analysis.
+      <h4>3. Admin Dashboard</h4>
+* Lawyer Management System: This system serves as a freelancing platform for lawyers, enabling users to find and hire suitable legal representatives for individual cases efficiently. It features three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The Admin System employs following features: <br> <br>
+          a. <i>Admin report generate</i>: They will be able to check various information about their system. For example, how many lawyers are registered into their website, how many experienced lawyers are registered etc. all these data will be shown to them through pie charts. <br>
+          b. <i>Secure Registration</i>: Lawyers don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the lawyer into their private email.
+          c. <i>Profile Management</i>: Lawyers can update their profiles seamlessly once logged in into the system. <br>
+          d. <i>Admin Access</i>: Admins can log into the system using their registered ID and password stored in the database. Admins have access to view and manipulate lawyer and general user profiles. <br>
+          e. <i>Registration Approval</i>: Admin approval is required for lawyers to log into the system after registration. They can verify the authenticity of lawyers before granting access to the system.<br>
+          f. <i>User Management</i>: AAdmins have the authority to block users from the system in case of any inconvenience or misconduct.<br>
+*   Mental Health: Access to counseling, therapy, and mental health support services is facilitated through the admin dashboard. Admins can oversee the provision of mental health services and ensure quality standards are met.
+*   Complaint Desk: Administrators can monitor and respond to user complaints and feedback efficiently. Complaints can be categorized and resolved promptly to ensure user satisfaction.
 
-<h3>3. Admin Dashboard</h3>
-
-.Allows lawyers to view and accept appointment requests.
-
-.Provides access to case details and client information.
-
-.Facilitates communication with undertrial prisoners.
-
-.Lawyer Registration and Profile Management:
-
-Lawyers can register on the platform and manage their profiles, including personal information, expertise, and contact details.
-
-.Client Appointment Handling:
-
-Lawyers can view and manage appointment requests from clients, including accepting or rejecting appointments based on availability.
-
-.Case Management:
-
-Lawyers can access details of assigned cases, including client information, case history, and relevant documents.
-
-.Communication Tools:
-
-The system facilitates communication between lawyers and clients, allowing for messaging and file sharing within a secure environment.
-
-.Performance Analytics:
-
-Lawyers can track their performance metrics, such as the number of appointments attended, cases handled, and client satisfaction ratings.
-
-.Legal Document Repository:
-
-Lawyers can store and access legal documents relevant to their cases, ensuring easy retrieval and organization of essential files.
-
-.Continuing Legal Education (CLE) Integration:
-
-Integration with CLE programs allows lawyers to stay updated with the latest legal developments and earn credits for professional development.
-
-#Objectives
-
-Admin Management: Admin can manage user profiles and ensure system integrity.
-
-Secure Registration: Passwords are automatically generated and sent to users' private email for enhanced security.
-
-Web-Based Booking: Facilitates easy appointment scheduling between clients and lawyers.
-
-Profile Updates: Users can update their profiles conveniently within the system.
 
 #Technology Stack Used
 
