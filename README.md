@@ -22,7 +22,7 @@ Here're some of the project's best features:
 *   Lawyer Management System: This system serves as a freelancing platform for lawyers, enabling users to find and hire suitable legal representatives for individual cases efficiently. It features three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The User System employs following features: <br> <br>
           a. <i> Filtering search option</i>: Users can search for lawyers based on specific criteria. <br>
           b. <i>Booking system (general user)</i>: User can check out lawyer’s profile and send them booking request. Automatically an email will be generated and will be send to lawyer’s email. They will be able to see later whether their booking request is accepted or not. <br>
-          c. <i>Secure Registration</i>: Users don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the user into their private email.
+          c. <i>Secure Registration</i>: Users don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the user into their private email.<br>
           d. <i>Web-Based Booking System</i>: Enables easy scheduling of appointments online. <br>
           e. <i>Profile Management</i>: Users can update their profiles seamlessly once logged in into the system. <br>
           f. <i>Guest Access</i>: Guest users can browse lawyers' profiles, but registration is required for booking. <br>
@@ -35,9 +35,10 @@ Here're some of the project's best features:
       <h4>2. Lawyers Dashboard</h4> 
 * Lawyer Management System: This system serves as a freelancing platform for lawyers, enabling users to find and hire suitable legal representatives for individual cases efficiently. It features three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The Lawyers System employs following features: <br> <br>
           a. <i>Booking system (lawyer)</i>: Lawyers can review their most recent booking requests upon logging into the system. They have the option to accept booking requests if they agree to meet with the client. Additionally, lawyers will receive email notifications to keep them informed of new booking requests. <br>
-          b. <i>Secure Registration</i>: Lawyers don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the lawyer into their private email.
+          b. <i>Secure Registration</i>: Lawyers don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the lawyer into their private email.<br>
           c. <i>Profile Management</i>: Lawyers can update their profiles seamlessly once logged in into the system.
-
+* Lawyer Management System:
+* 
 
       <h4>3. Admin Dashboard</h4>
 * Lawyer Management System: This system serves as a freelancing platform for lawyers, enabling users to find and hire suitable legal representatives for individual cases efficiently. It features three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The Admin System employs following features: <br> <br>
