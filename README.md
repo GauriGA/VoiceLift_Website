@@ -19,13 +19,13 @@ Here're some of the project's best features:
 
       <h4>1. Prisoners Dashboard</h4>  
 *   Education Service: Access educational resources and programs to enhance knowledge and skills.
-*   Lawyer Management System: This system functions as a freelancing platform for lawyers, facilitating users in searching and hiring suitable legal representatives for individual cases. Its primary objective is to ensure users find compatible lawyers efficiently. The system employs filtering options, including seniority/experience, expertise, and location, allowing users to refine their search criteria. Users can explore lawyer profiles for detailed information and send booking requests for appointments, specifying preferred dates. Once a lawyer accepts a request, both parties are notified, and the lawyer can view the user's details. The system comprises three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests.
-          a. Filtering search option: Users can find lawyers through searching option.
-          b. Booking system general user end: User can check out lawyer’s profile and send them booking request. Automatically an email will be generated and will be send to lawyer’s email. They will be able to                                                see later whether their booking request is accepted or not.
+*   Lawyer Management System: This system functions as a freelancing platform for lawyers, facilitating users in searching and hiring suitable legal representatives for individual cases. Its primary objective is to ensure users find compatible lawyers efficiently. The system comprises three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The system employs following features: <br> 
+          a. Filtering search option: Users can find lawyers through searching option. <br>
+          b. Booking system general user end: User can check out lawyer’s profile and send them booking request. Automatically an email will be generated and will be send to lawyer’s email. They will be able to                                                see later whether their booking request is accepted or not. <br>
           c. Users don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the user into their private email.
-          d. The system enables web-based booking system.
-          e. User will be able to update their profile once they are logged in into the system.
-          f. Any guest user will be able to see the lawyers and check their profile. But for booking the lawyer they must have to register
+          d. The system enables web-based booking system. <br>
+          e. User will be able to update their profile once they are logged in into the system. <br>
+          f. Any guest user will be able to see the lawyers and check their profile. But for booking the lawyer they must have to register. <br>
 *   Vocational Support: Receive assistance with job training resume building and career development.
 *   Mental Health: Assess their mental health well being by filling out a small a questionnaire predicted using ML model.
 *   Rights Directory: Explore a directory of legal rights and regulations.
