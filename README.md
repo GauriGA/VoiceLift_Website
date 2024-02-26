@@ -85,14 +85,19 @@ Here are some of the project's best features:
 
 1. Download the zip file.
 2. Extract the file.
-3. Paste inside the root directory (for XAMPP: xampp/htdocs).
-4. Open PHPMyAdmin (http://localhost/phpmyadmin).
-5. Create a database with the name `lawyermanagement`.
-6. Import `lawyermanagement.sql` file (given inside the zip package in the SQL file folder).
-7. Create a database with the name `voicelift`.
-8. Import `lawyermanagement.sql` file (given inside the zip package in the SQL file folder).
-9. Copy the folder `lawyermanagementsystem` to the root directory where the folder `GOOGLE SOL` is present (for XAMPP: xampp/htdocs).
-10. Run the script `http://localhost/GOOGLE SOL` (frontend).
+3. Create 2 folders named GOOGLE SOL and lawyermanagementsystem.
+   
+4. Paste inside the root directory (for XAMPP: xampp/htdocs/GOOGLE SOL).
+ ![WhatsApp Image 2024-02-26 at 15 37 21_320e85b8](https://github.com/GauriGA/VoiceLift_Website/assets/118062523/e47069b8-e3f6-4f65-823e-2d66a424eb10)
+5. Copy the folder `lawyermanagementsystem` in the directory where the folder `lawyermanagementsystem` is present (for XAMPP: xampp/htdocs/lawyermanagementsystem).
+![WhatsApp Image 2024-02-26 at 15 38 07_026da3f1](https://github.com/GauriGA/VoiceLift_Website/assets/118062523/301688f0-6aa8-4145-8134-5b1369e93df6)
+![Uploading WhatsApp Image 2024-02-26 at 15.38.17_ef92dd14.jpg…]()
+6. Open PHPMyAdmin (http://localhost/phpmyadmin).
+7. Create a database with the name `lawyermanagement`.
+8. Import `lawyermanagement.sql` file (given inside the zip package in the SQL file folder in the lawyermanagementsystem).
+9. Create a database with the name `voicelift`.
+10. Import `voicelift.sql` file (given inside the zip package in the SQL file folder in the voicelift(website) folder).
+11. Run the script `http://localhost/GOOGLE SOL` (frontend).
 
 # Contributors
 - Aarushi Jain
