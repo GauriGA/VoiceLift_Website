@@ -17,6 +17,7 @@ Here're some of the project's best features:
 *   User log in system: There are three types of user login system. 1. Admin 2. Lawyer 3. General user. Each type of users has to put their username and password to log in into the system.
 *   Register users with validation: There are three types of user registration one is for lawyers one for admin and the other is for general users.
 
+<br>
       <h4>1. Prisoners Dashboard</h4>  
 *   Education Service: Access educational resources and programs to enhance knowledge and skills.
 *   Lawyer Management System: This system serves as a freelancing platform for lawyers, enabling users to find and hire suitable legal representatives for individual cases efficiently. It features three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The User System employs following features: <br> <br>
@@ -31,14 +32,14 @@ Here're some of the project's best features:
 *   Rights Directory: Explore a comprehensive directory of legal rights and regulations.
 *   Complaint Desk: Submit complaints and feedback for prompt resolution.
 
-<br>
+<br><br>
       <h4>2. Lawyers Dashboard</h4> 
 * Lawyer Management System: This system serves as a freelancing platform for lawyers, enabling users to find and hire suitable legal representatives for individual cases efficiently. It features three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The Lawyers System employs following features: <br> <br>
           a. <i>Booking system (lawyer)</i>: Lawyers can review their most recent booking requests upon logging into the system. They have the option to accept booking requests if they agree to meet with the client. Additionally, lawyers will receive email notifications to keep them informed of new booking requests. <br>
           b. <i>Secure Registration</i>: Lawyers don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the lawyer into their private email.<br>
           c. <i>Profile Management</i>: Lawyers can update their profiles seamlessly once logged in into the system.
 
-<br>
+<br><br>
       <h4>3. Admin Dashboard</h4>
 * Lawyer Management System: This system serves as a freelancing platform for lawyers, enabling users to find and hire suitable legal representatives for individual cases efficiently. It features three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The Admin System employs following features: <br> <br>
           a. <i>Admin report generate</i>: They will be able to check various information about their system. For example, how many lawyers are registered into their website, how many experienced lawyers are registered etc. all these data will be shown to them through pie charts. <br>
