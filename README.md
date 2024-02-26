@@ -37,14 +37,13 @@ Here're some of the project's best features:
           a. <i>Booking system (lawyer)</i>: Lawyers can review their most recent booking requests upon logging into the system. They have the option to accept booking requests if they agree to meet with the client. Additionally, lawyers will receive email notifications to keep them informed of new booking requests. <br>
           b. <i>Secure Registration</i>: Lawyers don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the lawyer into their private email.<br>
           c. <i>Profile Management</i>: Lawyers can update their profiles seamlessly once logged in into the system.
-* Lawyer Management System:
-* 
+
 
       <h4>3. Admin Dashboard</h4>
 * Lawyer Management System: This system serves as a freelancing platform for lawyers, enabling users to find and hire suitable legal representatives for individual cases efficiently. It features three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The Admin System employs following features: <br> <br>
           a. <i>Admin report generate</i>: They will be able to check various information about their system. For example, how many lawyers are registered into their website, how many experienced lawyers are registered etc. all these data will be shown to them through pie charts. <br>
-          b. <i>Secure Registration</i>: Lawyers don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the lawyer into their private email.
-          c. <i>Profile Management</i>: Lawyers can update their profiles seamlessly once logged in into the system. <br>
+          b. <i>Secure Registration</i>: Admins don’t have to give their password while registering. A secured password will be generated automatically and will be sent to the admin into their private email.
+          c. <i>Profile Management</i>: Admins can update their profiles seamlessly once logged in into the system. <br>
           d. <i>Admin Access</i>: Admins can log into the system using their registered ID and password stored in the database. Admins have access to view and manipulate lawyer and general user profiles. <br>
           e. <i>Registration Approval</i>: Admin approval is required for lawyers to log into the system after registration. They can verify the authenticity of lawyers before granting access to the system.<br>
           f. <i>User Management</i>: AAdmins have the authority to block users from the system in case of any inconvenience or misconduct.<br>
