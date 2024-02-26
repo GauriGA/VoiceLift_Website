@@ -17,7 +17,6 @@ Here're some of the project's best features:
 *   User log in system: There are three types of user login system. 1. Admin 2. Lawyer 3. General user. Each type of users has to put their username and password to log in into the system.
 *   Register users with validation: There are three types of user registration one is for lawyers one for admin and the other is for general users.
 
-<br>
       <h4>1. Prisoners Dashboard</h4>  
 *   Education Service: Access educational resources and programs to enhance knowledge and skills.
 *   Lawyer Management System: This system serves as a freelancing platform for lawyers, enabling users to find and hire suitable legal representatives for individual cases efficiently. It features three user panels: users seeking legal assistance, lawyers offering services, and registered users eligible to send booking requests. The User System employs following features: <br> <br>
