@@ -16,13 +16,15 @@ Here're some of the project's best features:
 
 *   User log in system: There are three types of user login system. 1. Admin 2. Lawyer 3. General user. Each type of users has to put their username and password to log in into the system.
 *   Register users with validation: There are three types of user registration one is for lawyers one for admin and the other is for general users.
+
+      <h3>1. Prisoners Dashboard</h3>  
 *   Education Service: Access educational resources and programs to enhance knowledge and skills.
 *   Vocational Support: Receive assistance with job training resume building and career development.
 *   Mental Health: Access counseling therapy and mental health support services.
 *   Rights Directory: Explore a directory of legal rights and regulations.
 *   Complaint Desk: Submit complaints and feedback for prompt resolution.
 
-2.Admin Dashboard:
+<h3>2. Lawyers Dashboard</h3>
 
 .Manages user accounts and system functionality.
 
@@ -30,7 +32,7 @@ Here're some of the project's best features:
 
 .Generates reports and statistics for system analysis.
 
-3.Lawyer Dashboard:
+<h3>3. Admin Dashboard</h3>
 
 .Allows lawyers to view and accept appointment requests.
 
