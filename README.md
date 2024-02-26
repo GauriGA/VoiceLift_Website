@@ -91,7 +91,7 @@ Here are some of the project's best features:
  ![WhatsApp Image 2024-02-26 at 15 37 21_320e85b8](https://github.com/GauriGA/VoiceLift_Website/assets/118062523/e47069b8-e3f6-4f65-823e-2d66a424eb10)
 5. Copy the folder `lawyermanagementsystem` in the directory where the folder `lawyermanagementsystem` is present (for XAMPP: xampp/htdocs/lawyermanagementsystem).
 ![WhatsApp Image 2024-02-26 at 15 38 07_026da3f1](https://github.com/GauriGA/VoiceLift_Website/assets/118062523/301688f0-6aa8-4145-8134-5b1369e93df6)
-![Uploading WhatsApp Image 2024-02-26 at 15.38.17_ef92dd14.jpg…]()
+![WhatsApp Image 2024-02-26 at 15 38 17_b7eb8feb](https://github.com/GauriGA/VoiceLift_Website/assets/118062523/7045d2c6-d950-467f-b8ad-5bc04372788a)
 6. Open PHPMyAdmin (http://localhost/phpmyadmin).
 7. Create a database with the name `lawyermanagement`.
 8. Import `lawyermanagement.sql` file (given inside the zip package in the SQL file folder in the lawyermanagementsystem).
