@@ -43,13 +43,14 @@ Here are some of the project's best features:
 * **Mental Health**: Access counseling, therapy, and mental health support services is facilitated through the admin dashboard. Admins can oversee the provision of mental health services and ensure quality standards are met.
 * **Complaint Desk**: Administrators can monitor and respond to user complaints and feedback efficiently. Complaints can be categorized and resolved promptly to ensure user satisfaction.
 
-# Technology Stack Used
+# 💻 Built with
 
 ### Frontend Technologies Used
 1. HTML
 2. CSS
 3. Bootstrap
 4. JavaScript
+
 
 ### Backend Technologies Used
 1. PHP
