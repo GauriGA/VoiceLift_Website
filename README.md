@@ -79,7 +79,7 @@ Here are some of the project's best features:
 1. XAMPP Server
 
 ### Platform for Deployment of Mental Health ML Model
-- Render
+1. Render
 
 # How to run the VoiceLift-Help for Innocent Project Using PHP Mysql and Firebase:
 
